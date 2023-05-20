@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBUCKS-payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="mainscreen">
+        <div class="card">
+            <div class="leftside">
+                <img src="https://7cubeshospitality.com/wp-content/uploads/2021/02/hotcofee.jpg" class="product"
+                    alt="caffee" />
+            </div>
+            <div class="rightside">
+                <form onsubmit="formSubmit()" action="">
+                    <h1>CheckOut</h1>
+                    <h2>Payment Information</h2>
+                    <p>Full Name </p>
+                    <input type="text" class="inputbox" name="name" required />
+                    <p>Email </p>
+                    <input type="email" class="inputbox" name="card_number" id="card_number" required />
+                    <p>Address </p>
+                    <input type="text" class="inputbox" name="name" required />
+                    <p>City </p>
+                    <input type="text" class="inputbox" name="name" required />
+                    <div class="expcvv">
+
+                        <p class="expcvv_text">State </p>
+                        <input type="text" class="inputbox" name="exp_date" required />
+
+                        <p class="expcvv_text2">Zip</p>
+                        <input type="text" class="inputbox" required />
+
+                    </div>
+                    <p class="expcvv_text2">price </p>
+                    <input type="number" class="inputbox">
+                    <button type="submit" class="button">Checkout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function formSubmit() {
+            alert("Your Order has been Submitted, Successfully!");
+        }
+    </script>
+</body>
+
+</html>
